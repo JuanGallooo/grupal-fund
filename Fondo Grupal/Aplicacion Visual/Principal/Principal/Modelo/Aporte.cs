@@ -10,7 +10,7 @@ namespace Principal.Modelo
     {
         private double valor;
         private DateTime fechaCompra;
-
+        //coments
         public double Valor { get => valor; set => valor = value; }
         public DateTime FechaCompra { get => fechaCompra; set => fechaCompra = value; }
 
