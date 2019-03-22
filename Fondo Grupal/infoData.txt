@@ -1,0 +1,11 @@
+1357
+
+            String contra = "fondoGrupal2019";
+            int suma = 0;
+            Console.WriteLine(line);
+            for (int i = 0; i < contra.Length; i++)
+            {
+                suma += Encoding.ASCII.GetBytes(contra)[i];
+                Console.WriteLine(Encoding.ASCII.GetBytes(contra)[i]);
+            }
+            Console.WriteLine(suma);
