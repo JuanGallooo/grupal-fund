@@ -22,7 +22,6 @@ C:\Users\Juan Esteban Gallo\OneDrive\Documents\Trabajos\Fondo Grupal\grupal-fund
 C:\Users\Juan Esteban Gallo\OneDrive\Documents\Trabajos\Fondo Grupal\grupal-fund\Fondo Grupal\Aplicacion Visual\Principal\Principal\bin\Debug\Principal.application
 C:\Users\Juan Esteban Gallo\OneDrive\Documents\Trabajos\Fondo Grupal\grupal-fund\Fondo Grupal\Aplicacion Visual\Principal\Principal\bin\Debug\Principal.exe
 C:\Users\Juan Esteban Gallo\OneDrive\Documents\Trabajos\Fondo Grupal\grupal-fund\Fondo Grupal\Aplicacion Visual\Principal\Principal\bin\Debug\Principal.pdb
-C:\Users\Juan Esteban Gallo\OneDrive\Documents\Trabajos\Fondo Grupal\grupal-fund\Fondo Grupal\Aplicacion Visual\Principal\Principal\obj\Debug\Principal.csprojAssemblyReference.cache
 C:\Users\Juan Esteban Gallo\OneDrive\Documents\Trabajos\Fondo Grupal\grupal-fund\Fondo Grupal\Aplicacion Visual\Principal\Principal\obj\Debug\Principal.Interfaz.AgregarMiembro.resources
 C:\Users\Juan Esteban Gallo\OneDrive\Documents\Trabajos\Fondo Grupal\grupal-fund\Fondo Grupal\Aplicacion Visual\Principal\Principal\obj\Debug\Principal.Interfaz.CrearFondo.resources
 C:\Users\Juan Esteban Gallo\OneDrive\Documents\Trabajos\Fondo Grupal\grupal-fund\Fondo Grupal\Aplicacion Visual\Principal\Principal\obj\Debug\Principal.Interfaz.FormPrestamo.resources

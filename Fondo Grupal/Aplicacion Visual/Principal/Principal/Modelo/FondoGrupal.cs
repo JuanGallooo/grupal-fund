@@ -466,6 +466,7 @@ namespace Principal.Modelo
                     retorno += "Monto total prestado : $" + m.PrestamoMiembro.PrestamoTotal + "\r\n";
                     retorno += "Saldo restante : $" + m.PrestamoMiembro.SaldoRestante + "\r\n";
                     retorno += "Cuota por pagar : $" + m.PrestamoMiembro.Cuota + "\r\n";
+                    retorno += "Cuotas restantes : " + m.PrestamoMiembro.NumCuotas + "\r\n";
                 }
                 else retorno += "Cuota por pagar : $0" + "\r\n";
 
@@ -491,6 +492,7 @@ namespace Principal.Modelo
                             retorno += "Monto total prestado : $" + e.PrestamoMiembro.PrestamoTotal + "\r\n";
                             retorno += "Saldo restante : $" + e.PrestamoMiembro.SaldoRestante + "\r\n";
                             retorno += "Cuota por pagar : $" + e.PrestamoMiembro.Cuota + "\r\n";
+                            retorno += "Cuotas restantes : " + e.PrestamoMiembro.NumCuotas + "\r\n";
                         }
                         else retorno += "No tiene ningun prestamo activo." + "\r\n";
                     }
@@ -511,7 +513,7 @@ namespace Principal.Modelo
                 retorno += "Monto total prestado : $" + m.PrestamoMiembro.PrestamoTotal + "\r\n";
                 retorno += "Saldo restante : $" + m.PrestamoMiembro.SaldoRestante + "\r\n";
                 retorno += "Cuota por pagar : $" + m.PrestamoMiembro.Cuota + "\r\n";
-                retorno += "Cuotas restantes : $" + m.PrestamoMiembro.NumCuotas + "\r\n";
+                retorno += "Cuotas restantes : " + m.PrestamoMiembro.NumCuotas + "\r\n";
             }
             else retorno += "Cuota por pagar : $0" + "\r\n";
 
