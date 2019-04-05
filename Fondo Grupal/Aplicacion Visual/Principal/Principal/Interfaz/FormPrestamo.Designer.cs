@@ -42,9 +42,10 @@
             // 
             // btnPrestar
             // 
+            this.btnPrestar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPrestar.Location = new System.Drawing.Point(76, 220);
             this.btnPrestar.Name = "btnPrestar";
-            this.btnPrestar.Size = new System.Drawing.Size(75, 23);
+            this.btnPrestar.Size = new System.Drawing.Size(75, 25);
             this.btnPrestar.TabIndex = 17;
             this.btnPrestar.Text = "Prestar";
             this.btnPrestar.UseVisualStyleBackColor = true;
@@ -52,50 +53,56 @@
             // 
             // txtPocen
             // 
-            this.txtPocen.Location = new System.Drawing.Point(115, 190);
+            this.txtPocen.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPocen.Location = new System.Drawing.Point(131, 190);
             this.txtPocen.Name = "txtPocen";
-            this.txtPocen.Size = new System.Drawing.Size(100, 20);
+            this.txtPocen.Size = new System.Drawing.Size(100, 22);
             this.txtPocen.TabIndex = 14;
             // 
             // lbnPorcentaje
             // 
             this.lbnPorcentaje.AutoSize = true;
+            this.lbnPorcentaje.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbnPorcentaje.Location = new System.Drawing.Point(25, 197);
             this.lbnPorcentaje.Name = "lbnPorcentaje";
-            this.lbnPorcentaje.Size = new System.Drawing.Size(21, 13);
+            this.lbnPorcentaje.Size = new System.Drawing.Size(26, 16);
             this.lbnPorcentaje.TabIndex = 13;
             this.lbnPorcentaje.Text = "% :";
             // 
             // txtCuotas
             // 
-            this.txtCuotas.Location = new System.Drawing.Point(115, 157);
+            this.txtCuotas.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCuotas.Location = new System.Drawing.Point(131, 157);
             this.txtCuotas.Name = "txtCuotas";
-            this.txtCuotas.Size = new System.Drawing.Size(100, 20);
+            this.txtCuotas.Size = new System.Drawing.Size(100, 22);
             this.txtCuotas.TabIndex = 12;
             // 
             // lbnCuotas
             // 
             this.lbnCuotas.AutoSize = true;
-            this.lbnCuotas.Location = new System.Drawing.Point(25, 164);
+            this.lbnCuotas.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbnCuotas.Location = new System.Drawing.Point(25, 161);
             this.lbnCuotas.Name = "lbnCuotas";
-            this.lbnCuotas.Size = new System.Drawing.Size(81, 13);
+            this.lbnCuotas.Size = new System.Drawing.Size(98, 16);
             this.lbnCuotas.TabIndex = 11;
             this.lbnCuotas.Text = "No° de cuotas :";
             this.lbnCuotas.Click += new System.EventHandler(this.label1_Click);
             // 
             // txtPrestamo
             // 
-            this.txtPrestamo.Location = new System.Drawing.Point(115, 122);
+            this.txtPrestamo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPrestamo.Location = new System.Drawing.Point(131, 122);
             this.txtPrestamo.Name = "txtPrestamo";
-            this.txtPrestamo.Size = new System.Drawing.Size(100, 20);
+            this.txtPrestamo.Size = new System.Drawing.Size(100, 22);
             this.txtPrestamo.TabIndex = 10;
             // 
             // labPrestamo
             // 
             this.labPrestamo.AutoSize = true;
-            this.labPrestamo.Location = new System.Drawing.Point(25, 129);
+            this.labPrestamo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labPrestamo.Location = new System.Drawing.Point(25, 126);
             this.labPrestamo.Name = "labPrestamo";
-            this.labPrestamo.Size = new System.Drawing.Size(81, 13);
+            this.labPrestamo.Size = new System.Drawing.Size(100, 16);
             this.labPrestamo.TabIndex = 9;
             this.labPrestamo.Text = "Prestamo en $ :";
             this.labPrestamo.Click += new System.EventHandler(this.labNombre_Click);
@@ -103,7 +110,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(54, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(64, 4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(115, 112);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -114,7 +121,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(231, 255);
+            this.ClientSize = new System.Drawing.Size(243, 255);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnPrestar);
             this.Controls.Add(this.txtPocen);

@@ -38,40 +38,45 @@
             // lbnNombre
             // 
             this.lbnNombre.AutoSize = true;
-            this.lbnNombre.Location = new System.Drawing.Point(34, 126);
+            this.lbnNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbnNombre.Location = new System.Drawing.Point(20, 44);
             this.lbnNombre.Name = "lbnNombre";
-            this.lbnNombre.Size = new System.Drawing.Size(83, 13);
+            this.lbnNombre.Size = new System.Drawing.Size(105, 16);
             this.lbnNombre.TabIndex = 0;
             this.lbnNombre.Text = "Nombre Fondo :";
             // 
             // lbnValorAporte
             // 
             this.lbnValorAporte.AutoSize = true;
-            this.lbnValorAporte.Location = new System.Drawing.Point(34, 173);
+            this.lbnValorAporte.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbnValorAporte.Location = new System.Drawing.Point(20, 93);
             this.lbnValorAporte.Name = "lbnValorAporte";
-            this.lbnValorAporte.Size = new System.Drawing.Size(71, 13);
+            this.lbnValorAporte.Size = new System.Drawing.Size(89, 16);
             this.lbnValorAporte.TabIndex = 1;
             this.lbnValorAporte.Text = "Valor Aporte :";
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(128, 118);
+            this.txtNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombre.Location = new System.Drawing.Point(130, 38);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(100, 20);
+            this.txtNombre.Size = new System.Drawing.Size(100, 22);
             this.txtNombre.TabIndex = 2;
             // 
             // txtValor
             // 
-            this.txtValor.Location = new System.Drawing.Point(128, 173);
+            this.txtValor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtValor.Location = new System.Drawing.Point(130, 93);
             this.txtValor.Name = "txtValor";
-            this.txtValor.Size = new System.Drawing.Size(100, 20);
+            this.txtValor.Size = new System.Drawing.Size(100, 22);
             this.txtValor.TabIndex = 3;
             // 
             // btnNuevo
             // 
-            this.btnNuevo.Location = new System.Drawing.Point(86, 228);
+            this.btnNuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNuevo.Location = new System.Drawing.Point(86, 130);
             this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(75, 23);
+            this.btnNuevo.Size = new System.Drawing.Size(75, 25);
             this.btnNuevo.TabIndex = 4;
             this.btnNuevo.Text = "Guardar";
             this.btnNuevo.UseVisualStyleBackColor = true;
@@ -81,7 +86,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(259, 303);
+            this.ClientSize = new System.Drawing.Size(259, 172);
             this.Controls.Add(this.btnNuevo);
             this.Controls.Add(this.txtValor);
             this.Controls.Add(this.txtNombre);

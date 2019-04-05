@@ -44,43 +44,48 @@
             // 
             this.labelUsuario.AutoSize = true;
             this.labelUsuario.BackColor = System.Drawing.Color.Transparent;
+            this.labelUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelUsuario.Location = new System.Drawing.Point(346, 204);
             this.labelUsuario.Name = "labelUsuario";
-            this.labelUsuario.Size = new System.Drawing.Size(46, 13);
+            this.labelUsuario.Size = new System.Drawing.Size(58, 16);
             this.labelUsuario.TabIndex = 1;
             this.labelUsuario.Text = "Usuario:";
             // 
             // txtUsuario
             // 
+            this.txtUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsuario.Location = new System.Drawing.Point(349, 221);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(139, 20);
+            this.txtUsuario.Size = new System.Drawing.Size(139, 22);
             this.txtUsuario.TabIndex = 2;
             // 
             // txtContra
             // 
+            this.txtContra.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtContra.Location = new System.Drawing.Point(349, 287);
             this.txtContra.MaxLength = 15;
             this.txtContra.Name = "txtContra";
             this.txtContra.PasswordChar = '*';
-            this.txtContra.Size = new System.Drawing.Size(139, 20);
+            this.txtContra.Size = new System.Drawing.Size(139, 22);
             this.txtContra.TabIndex = 4;
             // 
             // labelContra
             // 
             this.labelContra.AutoSize = true;
             this.labelContra.BackColor = System.Drawing.Color.Transparent;
+            this.labelContra.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelContra.Location = new System.Drawing.Point(346, 270);
             this.labelContra.Name = "labelContra";
-            this.labelContra.Size = new System.Drawing.Size(67, 13);
+            this.labelContra.Size = new System.Drawing.Size(83, 16);
             this.labelContra.TabIndex = 3;
             this.labelContra.Text = "Contraseña :";
             // 
             // btnIniciar
             // 
+            this.btnIniciar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIniciar.Location = new System.Drawing.Point(371, 335);
             this.btnIniciar.Name = "btnIniciar";
-            this.btnIniciar.Size = new System.Drawing.Size(91, 23);
+            this.btnIniciar.Size = new System.Drawing.Size(108, 25);
             this.btnIniciar.TabIndex = 5;
             this.btnIniciar.Text = "Iniciar Sesión";
             this.btnIniciar.UseVisualStyleBackColor = true;
@@ -88,9 +93,10 @@
             // 
             // btnCargar
             // 
+            this.btnCargar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCargar.Location = new System.Drawing.Point(371, 364);
             this.btnCargar.Name = "btnCargar";
-            this.btnCargar.Size = new System.Drawing.Size(91, 23);
+            this.btnCargar.Size = new System.Drawing.Size(108, 25);
             this.btnCargar.TabIndex = 6;
             this.btnCargar.Text = "Cargar Fondo";
             this.btnCargar.UseVisualStyleBackColor = true;
@@ -99,9 +105,10 @@
             // 
             // btnNuevo
             // 
+            this.btnNuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNuevo.Location = new System.Drawing.Point(371, 393);
             this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(91, 23);
+            this.btnNuevo.Size = new System.Drawing.Size(108, 25);
             this.btnNuevo.TabIndex = 7;
             this.btnNuevo.Text = "Nuevo Fondo";
             this.btnNuevo.UseVisualStyleBackColor = true;

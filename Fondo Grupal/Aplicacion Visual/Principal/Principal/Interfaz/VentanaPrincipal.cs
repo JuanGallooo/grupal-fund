@@ -33,6 +33,8 @@ namespace Principal.Interfaz
             dateTimePicker1.Value = principal.Mundo.FechaCreacion;
             actualizarInfoFondo();
         }
+
+
         public void actualizarInfoFondo()
         {
             infoNombreFondo.Text = principal.Mundo.NombreFondo;
@@ -424,11 +426,13 @@ namespace Principal.Interfaz
                         if(buscar.PrestamoMiembro== null)
                         {
                         principal.Mundo.RealizarPrestamo(cedula, Convert.ToDouble(prestamo), Convert.ToInt32(cuotas), Convert.ToDouble(interes)/100);
+                            MessageBox.Show("Se ha prestado con éxito");
                         }
                         else
                         {
                             if((MessageBox.Show("¿Desea modificar la deuda por una nueva?", " Contesta", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == System.Windows.Forms.DialogResult.Yes)){
                                 principal.Mundo.RealizarPrestamo(cedula, Convert.ToDouble(prestamo), Convert.ToInt32(cuotas), Convert.ToDouble(interes) / 100);
+                                MessageBox.Show("Se ha prestado con éxito");
                             }
 
                         }
@@ -460,11 +464,13 @@ namespace Principal.Interfaz
                             if(buscar.PrestamoMiembro == null)
                             {
                             principal.Mundo.RealizarPrestamoT(cedula, cedula2, Convert.ToDouble(prestamo), Convert.ToInt32(cuotas), Convert.ToDouble(interes)/100);
+                                MessageBox.Show("Se ha prestado con éxito");
                             }
                             else
                             {
                                 if ((MessageBox.Show("¿Desea modificar la deuda por una nueva?", " Contesta", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == System.Windows.Forms.DialogResult.Yes)){
                                     principal.Mundo.RealizarPrestamoT(cedula, cedula2, Convert.ToDouble(prestamo), Convert.ToInt32(cuotas), Convert.ToDouble(interes) / 100);
+                                    MessageBox.Show("Se ha prestado con éxito");
                                 }
                             }
 
@@ -482,7 +488,6 @@ namespace Principal.Interfaz
                 }
                 else MessageBox.Show("seleccione un miembro primario primero");
             }
-            MessageBox.Show("Se ha prestado con éxito");
             actualizarInfoFondo();
         }
 

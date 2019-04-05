@@ -68,7 +68,7 @@ namespace Principal.Modelo
             ValorAporte = valorAporte;
             ganancias = 0;
             posiciones = new List<int>();
-            for (int i = 0; i < 16; i++)
+            for (int i = 0; i < 20; i++)
             {
                 posiciones.Add(i + 1);
             }
