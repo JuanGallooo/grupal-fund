@@ -182,5 +182,15 @@ namespace Principal
             }
             return path;
         }
+
+        public void modificarMiembroT(string cedulaPrincipal, string nombre, string cedula, string telefono, string correo, string direccion, string referencia)
+        {
+            mundo.modificarMiembroT(cedulaPrincipal, nombre, cedula,  telefono,  correo, direccion, referencia);
+        }
+
+        public void modificarMiembro(string nombre, string cedula, string telefono, string correo, string direccion, string referencia)
+        {
+            mundo.modificarMiembro(nombre, cedula, telefono, correo, direccion, referencia);
+        }
     }
 }

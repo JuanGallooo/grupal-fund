@@ -50,7 +50,7 @@ namespace Principal.Modelo
             rendimientos = new Dictionary<DateTime, double>();
 
             posiciones = new List<int>();
-            for (int i = 0; i < 16; i++)
+            for (int i = 0; i < 20; i++)
             {
                 posiciones.Add(i + 1);
             }
@@ -72,110 +72,9 @@ namespace Principal.Modelo
             {
                 posiciones.Add(i + 1);
             }
-            //Miembro nuevo1 = new Miembro("Juan", "1", "3166447243", "arroa@nothing.com", DateTime.Today, false, "Carrera 212 # 212-11", "Andres");
-            //Miembro nuevo2 = new Miembro("Santiago", "2", "3166447212", "arroaNada@nothing.com", DateTime.Today, false, "Carrera 212 # 212-11", "Andres");
-            //Miembro nuevo3 = new Miembro("Daniel", "3", "3145432221", "arroaTercer@nothing.com", DateTime.Today, false, "Carrera 212 # 212-11", "Andres");
-            //Miembro nuevo4 = new Miembro("David", "4", "3158643099", "arroa121@nothing.com", DateTime.Today, false, "Carrera 212 # 212-11", "Andres");
-            //Miembro nuevo5 = new Miembro("Esteban", "5", "121231312", "arroa3332@nothing.com", DateTime.Today, false, "Carrera 212 # 212-11", "Andres");
-            //Miembro nuevo6 = new Miembro("Marco", "6", "31492229112", "arroa4344@nothing.com", DateTime.Today, false, "Carrera 212 # 212-11", "Andres");
-
-            //miembros.Add(nuevo1);
-            //miembros.Add(nuevo2);
-            //miembros.Add(nuevo3);
-            //miembros.Add(nuevo4);
-            //miembros.Add(nuevo5);
-            //miembros.Add(nuevo6);
-
-            //AgregarAporte(5, "1");
-            //AgregarAporte(5, "2");
-            //AgregarAporte(5, "3");
-            //AgregarAporte(5, "4");
-            //AgregarAporte(5, "5");
-            //AgregarAporte(5, "6");
-
-            //RealizarPrestamo("2", 100000, 12, 0.05);
-
-            //Console.WriteLine(FechaCreacion.ToLongTimeString());
-
-            //Console.WriteLine(this.getRendimientoAporte());
-            //Console.WriteLine("--------------");
-            //cerrarSesion();
-
-            //FechaCreacion =new DateTime(2019, 04, 01);
-            //PagarCuota("2");
-            //Console.WriteLine(this.getRendimientoAporte());
-            //cerrarSesion();
-            //Console.WriteLine("--------------");
-
-            //FechaCreacion = new DateTime(2019, 05, 01);
-            //PagarCuota("2");
-            //Console.WriteLine(this.getRendimientoAporte());
-            //cerrarSesion();
-            //Console.WriteLine("--------------");
-
-            //FechaCreacion = new DateTime(2019, 06, 01);
-            //PagarCuota("2");
-            //Console.WriteLine(this.getRendimientoAporte());
-            //cerrarSesion();
-            //Console.WriteLine("--------------");
-
-            //FechaCreacion = new DateTime(2019, 07, 01);
-            //PagarCuota("2");
-            //Console.WriteLine(this.getRendimientoAporte());
-            //cerrarSesion();
-            //Console.WriteLine("--------------");
-
-            //FechaCreacion = new DateTime(2019, 08, 01);
-            //PagarCuota("2");
-            //Console.WriteLine(this.getRendimientoAporte());
-            //cerrarSesion();
-            //Console.WriteLine("--------------");
-            //FechaCreacion = new DateTime(2019, 09, 01);
-            //PagarCuota("2");
-            //Console.WriteLine(this.getRendimientoAporte());
-            //cerrarSesion();
-            //Console.WriteLine("--------------");
-            //FechaCreacion = new DateTime(2019, 10, 01);
-            //PagarCuota("2");
-            //Console.WriteLine(this.getRendimientoAporte());
-            //cerrarSesion();
-            //Console.WriteLine("--------------");
-            //FechaCreacion = new DateTime(2019, 11, 01);
-            //PagarCuota("2");
-            //Console.WriteLine(this.getRendimientoAporte());
-            //cerrarSesion();
-            //Console.WriteLine("--------------");
-
-            //FechaCreacion = new DateTime(2019, 12, 01);
-            //PagarCuota("2");
-            //Console.WriteLine(this.getRendimientoAporte());
-            //cerrarSesion();
-            //Console.WriteLine("--------------");
-            //FechaCreacion = new DateTime(2020, 01, 01);
-            //PagarCuota("2");
-            //Console.WriteLine(this.getRendimientoAporte());
-            //cerrarSesion();
-            //Console.WriteLine("--------------");
-            //FechaCreacion = new DateTime(2020, 02, 01);
-            //PagarCuota("2");
-            //Console.WriteLine(this.getRendimientoAporte());
-            //cerrarSesion();
-            //Console.WriteLine("--------------");
-            //try
-            //{
-            //    FechaCreacion = new DateTime(2020, 03, 01);
-            //    PagarCuota("2");
-            //    Console.WriteLine(this.getRendimientoAporte());
-            //    cerrarSesion();
-            //    Console.WriteLine("--------------");
-            //}
-            //catch (Exception e)
-            //{
-            //    Console.WriteLine(e.StackTrace);
-            //}
-            //Console.WriteLine(calcularPagoMiembro("3"));
-
         }
+
+
 
         public string getTotalPrestado()
         {
@@ -332,9 +231,11 @@ namespace Principal.Modelo
 
 
             int aportesP = (int)(monto / valorAporte);
+
             montoTotal -= monto;
             double prestamoTotal = monto+0;
             monto += ((porcentaje * monto) * numCoutas);
+
             miembros.Find(x => x.Cedula.Equals(cedula)).agregarPrestamo(prestamoTotal,monto, numCoutas, couta, true, porcentaje, aportesP);
         }
         public void RealizarPrestamoT(String cedulaPadre, String cedulaHijo, double monto, int numCoutas, double porcentaje)
@@ -374,6 +275,7 @@ namespace Principal.Modelo
             }
 
             montoTotal += saldoTotal * interes;
+
             if (miembros.Find(x => x.Cedula.Equals(cedula)).PrestamoMiembro.Estado == false)
             {
                 miembros.Find(x => x.Cedula.Equals(cedula)).PrestamoMiembro = null;
@@ -381,16 +283,22 @@ namespace Principal.Modelo
                 throw new Exception("Se ha cancelado el prestamo en su totalidad");
             }
         }
+
         public void PagarCuotaT(String cedulaPadre, String cedulaHijo)
         {
             Miembro consulta = miembros.Find(x => x.Cedula.Equals(cedulaPadre));
             if (consulta == null) throw new Exception("No se ha encontrado el cliente solicitado");
             Miembro consultaT = miembros.Find(x => x.Cedula.Equals(cedulaPadre)).MiembrosT.Find(y => y.Cedula.Equals(cedulaHijo));
             if (consultaT == null) throw new Exception("No se ha encontrado el cliente terceario solicitado");
+
             miembros.Find(x => x.Cedula.Equals(cedulaPadre)).MiembrosT.Find(y => y.Cedula.Equals(cedulaHijo)).pagarCuota(valorAporte);
+
             double saldoTotal = consultaT.PrestamoMiembro.PrestamoTotal;
             double interes = consultaT.PrestamoMiembro.Interes;
+
             montoTotal += consultaT.PrestamoMiembro.Cuota - interes * saldoTotal;
+
+
             if (miembros.Find(x => x.Cedula.Equals(cedulaPadre)).MiembrosT.Find(y => y.Cedula.Equals(cedulaHijo)).PrestamoMiembro.Estado == false)
             {
 
@@ -398,6 +306,8 @@ namespace Principal.Modelo
                 throw new Exception("Se ha cancelado el prestamo en su totalidad");
             }
             else ganancias += saldoTotal * interes;
+
+            montoTotal += saldoTotal * interes;
         }
         public void AbonarDeuda(String cedula)
         {
@@ -466,6 +376,7 @@ namespace Principal.Modelo
                     retorno += "Monto total prestado : $" + m.PrestamoMiembro.PrestamoTotal + "\r\n";
                     retorno += "Saldo restante : $" + m.PrestamoMiembro.SaldoRestante + "\r\n";
                     retorno += "Cuota por pagar : $" + m.PrestamoMiembro.Cuota + "\r\n";
+                    retorno += "Cuotas Pactadas : " + m.PrestamoMiembro.CuotasPactadas + "\r\n";
                     retorno += "Cuotas restantes : " + m.PrestamoMiembro.NumCuotas + "\r\n";
                 }
                 else retorno += "Cuota por pagar : $0" + "\r\n";
@@ -492,6 +403,7 @@ namespace Principal.Modelo
                             retorno += "Monto total prestado : $" + e.PrestamoMiembro.PrestamoTotal + "\r\n";
                             retorno += "Saldo restante : $" + e.PrestamoMiembro.SaldoRestante + "\r\n";
                             retorno += "Cuota por pagar : $" + e.PrestamoMiembro.Cuota + "\r\n";
+                            retorno += "Cuotas Pactadas : " + e.PrestamoMiembro.CuotasPactadas + "\r\n";
                             retorno += "Cuotas restantes : " + e.PrestamoMiembro.NumCuotas + "\r\n";
                         }
                         else retorno += "No tiene ningun prestamo activo." + "\r\n";
@@ -513,6 +425,7 @@ namespace Principal.Modelo
                 retorno += "Monto total prestado : $" + m.PrestamoMiembro.PrestamoTotal + "\r\n";
                 retorno += "Saldo restante : $" + m.PrestamoMiembro.SaldoRestante + "\r\n";
                 retorno += "Cuota por pagar : $" + m.PrestamoMiembro.Cuota + "\r\n";
+                retorno += "Cuotas Pactadas : " + m.PrestamoMiembro.CuotasPactadas + "\r\n";
                 retorno += "Cuotas restantes : " + m.PrestamoMiembro.NumCuotas + "\r\n";
             }
             else retorno += "Cuota por pagar : $0" + "\r\n";
@@ -537,6 +450,8 @@ namespace Principal.Modelo
                     {
                         retorno += "Monto total prestado : $" + e.PrestamoMiembro.PrestamoTotal + "\r\n";
                         retorno += "Saldo restante : $" + e.PrestamoMiembro.SaldoRestante + "\r\n";
+                        retorno += "Cuotas pactadas : $" + e.PrestamoMiembro.CuotasPactadas + "\r\n";
+                        retorno += "Cuotas restantes : $" + e.PrestamoMiembro.NumCuotas + "\r\n";
                         retorno += "Cuota por pagar : $" + e.PrestamoMiembro.Cuota + "\r\n";
                     }
                     else retorno += "No tiene ningun prestamo activo." + "\r\n";
@@ -554,6 +469,8 @@ namespace Principal.Modelo
             {
                 retorno += "Monto total prestado : $" + m.PrestamoMiembro.PrestamoTotal + "\r\n";
                 retorno += "Saldo restante : $" + m.PrestamoMiembro.SaldoRestante + "\r\n";
+                retorno += "Cuotas pactadas : $" + m.PrestamoMiembro.CuotasPactadas + "\r\n";
+                retorno += "Cuotas restantes : $" + m.PrestamoMiembro.NumCuotas+ "\r\n";
                 retorno += "Cuota por pagar : $" + m.PrestamoMiembro.Cuota + "\r\n";
             }
             else retorno += "Cuota por pagar : $0" + "\r\n";
@@ -564,6 +481,8 @@ namespace Principal.Modelo
         {
             ruta += "/copiaFondo"+"_"+nombreFondo+".txt";
             StreamWriter es = new StreamWriter(ruta);
+            // Fecha del cambio del programa acerca de las cuotas pactadas 
+            DateTime fechaCambio = new DateTime(2019,8,1);
 
             es.WriteLine(nombreFondo);
             es.WriteLine(fechaCreacion.ToShortDateString());
@@ -601,6 +520,10 @@ namespace Principal.Modelo
                         es.WriteLine(e.PrestamoMiembro.PrestamoTotal);
                         es.WriteLine(e.PrestamoMiembro.SaldoRestante);
                         es.WriteLine(e.PrestamoMiembro.NumCuotas);
+                        if(DateTime.Compare(fechaCambio,fechaCreacion) < 0)
+                        {
+                        es.WriteLine(e.PrestamoMiembro.CuotasPactadas);
+                        }
                         es.WriteLine(e.PrestamoMiembro.Cuota);
                         es.WriteLine(e.PrestamoMiembro.Estado);
                         es.WriteLine(e.PrestamoMiembro.Interes);
@@ -623,6 +546,10 @@ namespace Principal.Modelo
                     es.WriteLine(a.PrestamoMiembro.PrestamoTotal);
                     es.WriteLine(a.PrestamoMiembro.SaldoRestante);
                     es.WriteLine(a.PrestamoMiembro.NumCuotas);
+                    if (DateTime.Compare(fechaCambio, fechaCreacion) < 0)
+                    {
+                        es.WriteLine(a.PrestamoMiembro.CuotasPactadas);
+                    }
                     es.WriteLine(a.PrestamoMiembro.Cuota);
                     es.WriteLine(a.PrestamoMiembro.Estado);
                     es.WriteLine(a.PrestamoMiembro.Interes);
@@ -651,6 +578,9 @@ namespace Principal.Modelo
         }
         public void Cargardatos(String ruta)
         {
+            // Fecha del cambio del programa acerca de las cuotas pactadas 
+            DateTime fechaCambio = new DateTime(2019, 8, 1);
+
             StreamReader sr = new StreamReader(ruta);
             nombreFondo = sr.ReadLine();
             fechaCreacion = convertirFecha(sr.ReadLine());
@@ -691,12 +621,19 @@ namespace Principal.Modelo
                         double prestamoTotalT = Convert.ToDouble(sr.ReadLine());
                         double saldoRestanteT = Convert.ToDouble(sr.ReadLine());
                         int numCuotasT = Convert.ToInt32(sr.ReadLine());
+
+                        int cuotasPactadasT = 0;
+                        if (DateTime.Compare(fechaCambio, fechaCreacion) < 0)
+                        {
+                            cuotasPactadasT= Convert.ToInt32(sr.ReadLine()); 
+                        }
+
                         double cuotaT = Convert.ToDouble(sr.ReadLine());
                         bool estadoT = Convert.ToBoolean(sr.ReadLine());
                         double interesT = Convert.ToDouble(sr.ReadLine());
                         int numAportesT = Convert.ToInt32(sr.ReadLine());
 
-                        Prestamo nuevoT = new Prestamo(prestamoTotalT, saldoRestanteT, numCuotasT, cuotaT, estadoT, interesT, numCuotasT);
+                        Prestamo nuevoT = new Prestamo(prestamoTotalT, saldoRestanteT, numCuotasT, cuotaT, estadoT, interesT, numCuotasT,cuotasPactadasT);
                         miembros.Find(c => c.Cedula == cedula).MiembrosT.Find(k => k.Cedula == cedulaT).PrestamoMiembro = nuevoT;
                     }
                 }
@@ -713,12 +650,19 @@ namespace Principal.Modelo
                     double prestamoTotal = Convert.ToDouble(sr.ReadLine());
                     double saldoRestante = Convert.ToDouble(sr.ReadLine());
                     int numCuotas = Convert.ToInt32(sr.ReadLine());
+
+                    int cuotasPactadas = 0;
+                    if (DateTime.Compare(fechaCambio, fechaCreacion) < 0)
+                    {
+                        cuotasPactadas = Convert.ToInt32(sr.ReadLine());
+                    }
+
                     double cuota = Convert.ToDouble(sr.ReadLine());
                     bool estado = Convert.ToBoolean(sr.ReadLine());
                     double interes = Convert.ToDouble(sr.ReadLine());
                     int numAportes = Convert.ToInt32(sr.ReadLine());
 
-                    Prestamo nuevo = new Prestamo(prestamoTotal, saldoRestante, numCuotas, cuota, estado, interes, numCuotas);
+                    Prestamo nuevo = new Prestamo(prestamoTotal, saldoRestante, numCuotas, cuota, estado, interes, numCuotas,cuotasPactadas);
                     miembros.Find(c => c.Cedula == cedula).PrestamoMiembro = nuevo;
                 }
             }
@@ -919,6 +863,21 @@ namespace Principal.Modelo
             }
 
             return retorno;
+        }
+        public void modificarMiembro(string nombre, string cedula, string telefono, string correo, string direccion, string referencia)
+        {
+            Miembro consulta = miembros.Find(x => x.Cedula.Equals(cedula));
+            if (consulta == null) throw new Exception("No se ha encontrado el cliente solicitado");
+            miembros.Find(x => x.Cedula.Equals(cedula)).cambiarInfo(nombre, cedula,  telefono, correo, direccion,referencia);
+        }
+
+        public void modificarMiembroT(string cedulaPrincipal, string nombre, string cedula, string telefono, string correo, string direccion, string referencia)
+        {
+            Miembro consulta = miembros.Find(x => x.Cedula.Equals(cedulaPrincipal));
+            if (consulta == null) throw new Exception("No se ha encontrado el cliente solicitado");
+            Miembro consultaT = miembros.Find(x => x.Cedula.Equals(cedulaPrincipal)).MiembrosT.Find(y => y.Cedula.Equals(cedula));
+            if (consultaT == null) throw new Exception("No se ha encontrado el cliente terceario solicitado");
+            miembros.Find(x => x.Cedula.Equals(cedulaPrincipal)).MiembrosT.Find(y => y.Cedula.Equals(cedula)).cambiarInfo(nombre, cedula, telefono, correo, direccion, referencia);
         }
     }
 }

@@ -61,7 +61,7 @@ namespace Principal.Modelo
         }
         public void agregarPrestamo(double prestamoTotal, double saldoRestante, int numCuotas, double cuota, bool estado, double interes, int numAportes)
         {
-                Prestamo nuevo = new Prestamo(prestamoTotal, saldoRestante, numCuotas, cuota, estado, interes,numAportes);
+                Prestamo nuevo = new Prestamo(prestamoTotal, saldoRestante, numCuotas, cuota, estado, interes,numAportes,numCuotas);
                 prestamoMiembro = nuevo;
         }
 
@@ -73,6 +73,16 @@ namespace Principal.Modelo
         public void abonarDeuda()
         {
             prestamoMiembro = null;
+        }
+
+        public void cambiarInfo(string nombre, string cedula, string telefono, string correo, string direccion, string referencia)
+        {
+            Nombre = nombre;
+            Cedula = cedula;
+            Telefono = telefono;
+            Correo = correo;
+            Direccion = direccion;
+            Referencia = referencia;
         }
     }
 }

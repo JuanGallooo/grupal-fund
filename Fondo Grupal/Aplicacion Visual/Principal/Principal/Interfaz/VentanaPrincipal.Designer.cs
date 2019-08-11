@@ -100,6 +100,7 @@
             this.labelNombre = new System.Windows.Forms.Label();
             this.infoNombreFondo = new System.Windows.Forms.Label();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.btnModificarMiembro = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -353,6 +354,7 @@
             // 
             this.panel2.AutoScroll = true;
             this.panel2.BackColor = System.Drawing.Color.Transparent;
+            this.panel2.Controls.Add(this.btnModificarMiembro);
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.btnCalcularPagoM);
             this.panel2.Controls.Add(this.infoReferencia);
@@ -398,7 +400,7 @@
             // btnCalcularPagoM
             // 
             this.btnCalcularPagoM.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCalcularPagoM.Location = new System.Drawing.Point(69, 437);
+            this.btnCalcularPagoM.Location = new System.Drawing.Point(69, 431);
             this.btnCalcularPagoM.Name = "btnCalcularPagoM";
             this.btnCalcularPagoM.Size = new System.Drawing.Size(138, 25);
             this.btnCalcularPagoM.TabIndex = 21;
@@ -529,7 +531,7 @@
             // btnAbonar
             // 
             this.btnAbonar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAbonar.Location = new System.Drawing.Point(69, 408);
+            this.btnAbonar.Location = new System.Drawing.Point(69, 402);
             this.btnAbonar.Name = "btnAbonar";
             this.btnAbonar.Size = new System.Drawing.Size(138, 25);
             this.btnAbonar.TabIndex = 12;
@@ -540,7 +542,7 @@
             // btnCuota
             // 
             this.btnCuota.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCuota.Location = new System.Drawing.Point(69, 377);
+            this.btnCuota.Location = new System.Drawing.Point(69, 373);
             this.btnCuota.Name = "btnCuota";
             this.btnCuota.Size = new System.Drawing.Size(138, 25);
             this.btnCuota.TabIndex = 11;
@@ -590,7 +592,7 @@
             // btnPrestar
             // 
             this.btnPrestar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrestar.Location = new System.Drawing.Point(69, 346);
+            this.btnPrestar.Location = new System.Drawing.Point(69, 344);
             this.btnPrestar.Name = "btnPrestar";
             this.btnPrestar.Size = new System.Drawing.Size(138, 25);
             this.btnPrestar.TabIndex = 6;
@@ -641,7 +643,7 @@
             // btnReporteMiembro
             // 
             this.btnReporteMiembro.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReporteMiembro.Location = new System.Drawing.Point(69, 319);
+            this.btnReporteMiembro.Location = new System.Drawing.Point(69, 315);
             this.btnReporteMiembro.Name = "btnReporteMiembro";
             this.btnReporteMiembro.Size = new System.Drawing.Size(138, 25);
             this.btnReporteMiembro.TabIndex = 1;
@@ -824,6 +826,17 @@
             this.infoNombreFondo.TabIndex = 11;
             this.infoNombreFondo.Text = "--";
             // 
+            // btnModificarMiembro
+            // 
+            this.btnModificarMiembro.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModificarMiembro.Location = new System.Drawing.Point(69, 460);
+            this.btnModificarMiembro.Name = "btnModificarMiembro";
+            this.btnModificarMiembro.Size = new System.Drawing.Size(138, 25);
+            this.btnModificarMiembro.TabIndex = 23;
+            this.btnModificarMiembro.Text = "Modificar Miembro";
+            this.btnModificarMiembro.UseVisualStyleBackColor = true;
+            this.btnModificarMiembro.Click += new System.EventHandler(this.button3_Click);
+            // 
             // VentanaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -928,5 +941,6 @@
         private System.Windows.Forms.Label labelNombre;
         private System.Windows.Forms.Label infoNombreFondo;
         private System.Windows.Forms.BindingSource bindingSource1;
+        private System.Windows.Forms.Button btnModificarMiembro;
     }
 }

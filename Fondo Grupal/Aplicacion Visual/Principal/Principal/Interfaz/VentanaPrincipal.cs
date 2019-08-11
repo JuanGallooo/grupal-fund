@@ -48,7 +48,6 @@ namespace Principal.Interfaz
         }
 
 
-
         public void agregarMiembro(String nombre, String cedula, String telefono, string correo, String direccion, String referencia)
         {
             principal.agregarMiembro(nombre, cedula, telefono, correo, direccion, referencia);
@@ -781,5 +780,117 @@ namespace Principal.Interfaz
             }
             else ruta = null;
         }
+        private ModificarMiembro ventanaModificar;
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            //modificar miembro 
+
+            if (tercerario == false)
+            {
+                if (listMiembros.SelectedItems.Count > 0)
+                {
+                    try
+                    {
+                        ListViewItem seleccion = listMiembros.SelectedItems[0];
+                        String cedula = seleccion.SubItems[1].Text;
+                        if (MessageBox.Show("¿Desea modificar la información del miembro?", " Contesta", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == System.Windows.Forms.DialogResult.Yes)
+                        {
+
+                          
+                            Miembro buscar = principal.buscarMiembro(cedula);
+                            ventanaModificar = new ModificarMiembro(this,false,buscar.Nombre,buscar.Cedula,buscar.Telefono,buscar.Correo,buscar.Direccion,buscar.Referencia);
+
+                            ventanaModificar.Terceario = false;
+                            ventanaModificar.Visible = true;
+                            ventanaModificar.StartPosition = FormStartPosition.CenterParent;
+                            actualizarInfoFondo();
+
+                            actualizarInfoMiembro(buscar.Nombre, buscar.Cedula, buscar.FechaIngreso, buscar.Aportes.Count() + "", buscar.Telefono, buscar.Correo, buscar.Direccion, buscar.Referencia);
+                            actualizarListaMiembrosT(cedula, false);
+                        }
+                    }
+                    catch (Exception a)
+                    {
+                        MessageBox.Show(a.Message);
+                    }
+
+                }
+                else MessageBox.Show("Selecciona un miembro primero");
+            }
+            else
+            {
+                if (listMiembros.SelectedItems.Count > 0)
+                {
+                    try
+                    {
+                        ListViewItem seleccion = listMiembros.SelectedItems[0];
+                        String cedula = seleccion.SubItems[1].Text;
+                        if (listMiembrosT.SelectedItems.Count > 0)
+                        {
+                            ListViewItem seleccion2 = listMiembrosT.SelectedItems[0];
+                            String cedula2 = seleccion2.Text;
+                            try
+                            {
+                                if (MessageBox.Show("¿Desea modificar la información del miembro?", " Contesta", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == System.Windows.Forms.DialogResult.Yes)
+                                {
+                                    Miembro buscar = principal.buscarMiembroT(cedula, cedula2);
+                                    ventanaModificar = new ModificarMiembro(this, false, buscar.Nombre, buscar.Cedula, buscar.Telefono, buscar.Correo, buscar.Direccion, buscar.Referencia);
+
+                                    ventanaModificar.Terceario = true;
+                                    ventanaModificar.Visible = true;
+                                    ventanaModificar.StartPosition = FormStartPosition.CenterParent;
+                                    actualizarInfoFondo();
+
+                                    actualizarInfoMiembro(buscar.Nombre, buscar.Cedula, buscar.FechaIngreso, buscar.Aportes.Count() + "", buscar.Telefono, buscar.Correo, buscar.Direccion, buscar.Referencia);
+                                    actualizarListaMiembrosT(cedula, false);
+                                }
+                            }
+                            catch (Exception w)
+                            {
+                                MessageBox.Show(w.Message);
+                            }
+                        }
+                        else MessageBox.Show("seleccione un miembro terceario primero");
+                    }
+                    catch (Exception a)
+                    {
+                        MessageBox.Show(a.Message);
+                    }
+                }
+                else MessageBox.Show("seleccione un miembro primario primero");
+            }
+            actualizarInfoFondo();
+        }
+        public void ModificarMiembroT(String nombre, String cedula, String telefono, string correo, String direccion, String referencia)
+        {
+            ListViewItem seleccion = listMiembros.SelectedItems[0];
+            String cedulaPrincipal = seleccion.SubItems[1].Text;
+            principal.modificarMiembroT(cedulaPrincipal, nombre, cedula, telefono,  correo,  direccion, referencia);
+
+            Miembro buscar = principal.buscarMiembroT(cedulaPrincipal, cedula);
+
+            actualizarInfoMiembro(nombre, cedula, principal.Mundo.FechaCreacion, buscar.Aportes.Count() + "", telefono, correo, direccion, referencia);
+
+            actualizarListaMiembrosT(cedulaPrincipal, false);
+            ventanaModificar.Visible = false;
+            actualizarInfoFondo();
+
+            MessageBox.Show("Se ha modificado la información del miembro terceario");
+        }
+
+        public void ModificarMiembro(String nombre, String cedula, String telefono, string correo, String direccion, String referencia)
+        {
+            principal.modificarMiembro(nombre, cedula, telefono, correo, direccion, referencia);
+
+            Miembro buscar = principal.buscarMiembro(cedula);
+            actualizarInfoMiembro(nombre, cedula, principal.Mundo.FechaCreacion, buscar.Aportes.Count() + "", telefono, correo, direccion, referencia);
+            actualizarListaMiembros(false);
+            ventanaModificar.Visible = false;
+            actualizarInfoFondo();
+
+            MessageBox.Show("Se ha modificado la información del miembro");
+        }
     }
+
 }

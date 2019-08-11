@@ -15,7 +15,8 @@ namespace Principal.Modelo
         private bool estado;
         private double interes;
         private int numAportes;
-
+        private int cuotasPactadas;
+        
         public double PrestamoTotal { get => prestamoTotal; set => prestamoTotal = value; }
         public double SaldoRestante { get => saldoRestante; set => saldoRestante = value; }
         public int NumCuotas { get => numCuotas; set => numCuotas = value; }
@@ -23,12 +24,14 @@ namespace Principal.Modelo
         public bool Estado { get => estado; set => estado = value; }
         public double Interes { get => interes; set => interes = value; }
         public int NumAportes { get => numAportes; set => numAportes = value; }
+        public int CuotasPactadas { get => cuotasPactadas; set => cuotasPactadas = value; }
 
-        public Prestamo(double prestamoTotal,double saldoRestante, int numCuotas, double cuota, bool estado, double interes, int numAportes)
+        public Prestamo(double prestamoTotal,double saldoRestante, int numCuotas, double cuota, bool estado, double interes, int numAportes,int cuotasPactadas)
         {
             PrestamoTotal = prestamoTotal;
             SaldoRestante = saldoRestante;
             NumCuotas = numCuotas;
+            CuotasPactadas = cuotasPactadas;
             Cuota = cuota;
             Estado = estado;
             Interes = interes;

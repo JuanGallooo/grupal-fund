@@ -17,3 +17,4 @@ C:\Users\Juan Esteban Gallo\OneDrive\Documents\Trabajos\Fondo Grupal\grupal-fund
 C:\Users\Juan Esteban Gallo\OneDrive\Documents\Trabajos\Fondo Grupal\grupal-fund\Fondo Grupal\Aplicacion Visual\Principal\Principal\obj\Debug\Principal.application
 C:\Users\Juan Esteban Gallo\OneDrive\Documents\Trabajos\Fondo Grupal\grupal-fund\Fondo Grupal\Aplicacion Visual\Principal\Principal\obj\Debug\Principal.exe
 C:\Users\Juan Esteban Gallo\OneDrive\Documents\Trabajos\Fondo Grupal\grupal-fund\Fondo Grupal\Aplicacion Visual\Principal\Principal\obj\Debug\Principal.pdb
+C:\Users\Juan Esteban Gallo\OneDrive\Documents\Trabajos\Fondo Grupal\grupal-fund\Fondo Grupal\Aplicacion Visual\Principal\Principal\obj\Debug\Principal.Interfaz.ModificarMiembro.resources
