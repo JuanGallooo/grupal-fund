@@ -74,7 +74,7 @@ namespace Principal
             }
             catch(Exception e)
             {
-                MessageBox.Show("Error : " + e.Message+ e.StackTrace);
+                MessageBox.Show("Error : " + e.Message);
             }
         }
 

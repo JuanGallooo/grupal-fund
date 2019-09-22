@@ -198,12 +198,10 @@ namespace Principal.Interfaz
         {
             if (listMiembros.SelectedItems.Count > 0)
             {
-
                 ventanaAgregar = new AgregarMiembro(this, true);
                 ventanaAgregar.Visible = true;
                 ventanaAgregar.StartPosition = FormStartPosition.CenterParent;
                 actualizarInfoFondo();
-
             }
             else MessageBox.Show("Primero Selecciona un miembro principal para agregar el miembro terceario.");
         }
@@ -500,13 +498,19 @@ namespace Principal.Interfaz
                     {
                         ListViewItem seleccion = listMiembros.SelectedItems[0];
                         String cedula = seleccion.SubItems[1].Text;
+
+                        if ((MessageBox.Show("¿Desea pagar la cuota de este mes?", " Contesta", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == System.Windows.Forms.DialogResult.Yes))
+                        {
                         principal.Mundo.PagarCuota(cedula);
+                        MessageBox.Show("La cuota ha sido pagada.");
+                        }
 
                         Miembro buscar = principal.buscarMiembro(cedula);
+
+
                         actualizarInfoMiembro(buscar.Nombre, buscar.Cedula, buscar.FechaIngreso, buscar.Aportes.Count() + "", buscar.Telefono, buscar.Correo, buscar.Direccion, buscar.Referencia);
                         actualizarListaMiembrosT(cedula, false);
                         actualizarListaMiembros(false);
-                        MessageBox.Show("La cuota ha sido pagada.");
                     }
                     catch (Exception a)
                     {
@@ -529,9 +533,13 @@ namespace Principal.Interfaz
                             ListViewItem seleccion2 = listMiembrosT.SelectedItems[0];
                             String cedula2 = seleccion2.Text;
 
-                            principal.Mundo.PagarCuotaT(cedula, cedula2);
+                            if ((MessageBox.Show("¿Desea pagar la cuota de este mes?", " Contesta", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == System.Windows.Forms.DialogResult.Yes))
+                            {
+                                principal.Mundo.PagarCuotaT(cedula, cedula2);
+                                MessageBox.Show("La cuota ha sido pagada.");
+                            }
+                     
                             Miembro buscar = principal.buscarMiembroT(cedula, cedula2);
-                            MessageBox.Show("La cuota ha sido pagada.");
                             actualizarInfoMiembro(buscar.Nombre, buscar.Cedula, buscar.FechaIngreso, buscar.Aportes.Count() + "", buscar.Telefono, buscar.Correo, buscar.Direccion, buscar.Referencia);
                             actualizarListaMiembrosT(cedula, false);
                         }

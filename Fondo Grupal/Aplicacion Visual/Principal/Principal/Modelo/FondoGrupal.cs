@@ -297,6 +297,7 @@ namespace Principal.Modelo
             double interes = consultaT.PrestamoMiembro.Interes;
 
             montoTotal += consultaT.PrestamoMiembro.Cuota - interes * saldoTotal;
+            montoTotal += saldoTotal * interes;
 
 
             if (miembros.Find(x => x.Cedula.Equals(cedulaPadre)).MiembrosT.Find(y => y.Cedula.Equals(cedulaHijo)).PrestamoMiembro.Estado == false)
@@ -307,7 +308,6 @@ namespace Principal.Modelo
             }
             else ganancias += saldoTotal * interes;
 
-            montoTotal += saldoTotal * interes;
         }
         public void AbonarDeuda(String cedula)
         {
