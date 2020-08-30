@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -119,7 +120,8 @@ namespace Principal.Modelo
         internal string getRendimientoAporte()
         {
             String retorno = "";
-            double rendimiento = (ganancias + rendimientosFuturos()) / numAportes.Count() ;
+            //double rendimiento = (ganancias + rendimientosFuturos()) / numAportes.Count() ;
+            double rendimiento = (ganancias) / numAportes.Count();
             retorno += rendimiento;
             return retorno;
         }
@@ -361,7 +363,8 @@ namespace Principal.Modelo
             retorno += "Total monto disponible para prestamo: $" + montoTotal + "\r\n";
 
             retorno += "Total ganancias de la sesión hasta ahora: $" + ganancias + "\r\n";
-            retorno += "Total rendimiento del aporte : $" + (ganancias+rendimientosFuturos()) / numAportes.Count() + "\r\n";
+            //retorno += "Total rendimiento del aporte : $" + (ganancias+rendimientosFuturos()) / numAportes.Count() + "\r\n"; rendimientos futuros, se calculaban antes
+            retorno += "Total rendimiento del aporte : $" + (ganancias) / numAportes.Count() + "\r\n";
 
             retorno += "\r\n" + "\r\n";
 
@@ -684,11 +687,13 @@ namespace Principal.Modelo
         }
         public DateTime convertirFecha(String entrada)
         {
-            return Convert.ToDateTime(entrada);
+            return DateTime.ParseExact(entrada, "dd/MM/yyyy",  new CultureInfo("en-GB"));
+            //return Convert.ToDateTime(entrada);
         }
         public void cerrarSesion()
         {
-            double rendimiento = (ganancias+rendimientosFuturos()) / numAportes.Count();
+            //double rendimiento = (ganancias+rendimientosFuturos()) / numAportes.Count();
+            double rendimiento = (ganancias) / numAportes.Count();
             if (rendimientos.ContainsKey(fechaCreacion)) rendimientos[fechaCreacion] = rendimiento;
             else
             {

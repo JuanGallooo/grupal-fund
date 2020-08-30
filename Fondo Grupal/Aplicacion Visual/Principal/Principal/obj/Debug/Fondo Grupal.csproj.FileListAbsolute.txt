@@ -18,3 +18,23 @@ C:\Users\Juan Esteban Gallo\OneDrive\Documents\Trabajos\Fondo Grupal\grupal-fund
 C:\Users\Juan Esteban Gallo\OneDrive\Documents\Trabajos\Fondo Grupal\grupal-fund\Fondo Grupal\Aplicacion Visual\Principal\Principal\obj\Debug\Principal.exe
 C:\Users\Juan Esteban Gallo\OneDrive\Documents\Trabajos\Fondo Grupal\grupal-fund\Fondo Grupal\Aplicacion Visual\Principal\Principal\obj\Debug\Principal.pdb
 C:\Users\Juan Esteban Gallo\OneDrive\Documents\Trabajos\Fondo Grupal\grupal-fund\Fondo Grupal\Aplicacion Visual\Principal\Principal\obj\Debug\Principal.Interfaz.ModificarMiembro.resources
+C:\Users\juane\OneDrive\Escritorio\Gropal Fund\grupal-fund\Fondo Grupal\Aplicacion Visual\Principal\Principal\obj\Debug\Fondo Grupal.csprojAssemblyReference.cache
+C:\Users\juane\OneDrive\Escritorio\Gropal Fund\grupal-fund\Fondo Grupal\Aplicacion Visual\Principal\Principal\obj\Debug\Principal.Interfaz.ModificarMiembro.resources
+C:\Users\juane\OneDrive\Escritorio\Gropal Fund\grupal-fund\Fondo Grupal\Aplicacion Visual\Principal\Principal\obj\Debug\Principal.Interfaz.AgregarMiembro.resources
+C:\Users\juane\OneDrive\Escritorio\Gropal Fund\grupal-fund\Fondo Grupal\Aplicacion Visual\Principal\Principal\obj\Debug\Principal.Interfaz.CrearFondo.resources
+C:\Users\juane\OneDrive\Escritorio\Gropal Fund\grupal-fund\Fondo Grupal\Aplicacion Visual\Principal\Principal\obj\Debug\Principal.Interfaz.FormPrestamo.resources
+C:\Users\juane\OneDrive\Escritorio\Gropal Fund\grupal-fund\Fondo Grupal\Aplicacion Visual\Principal\Principal\obj\Debug\Principal.Interfaz.Reporte.resources
+C:\Users\juane\OneDrive\Escritorio\Gropal Fund\grupal-fund\Fondo Grupal\Aplicacion Visual\Principal\Principal\obj\Debug\Principal.Principal.resources
+C:\Users\juane\OneDrive\Escritorio\Gropal Fund\grupal-fund\Fondo Grupal\Aplicacion Visual\Principal\Principal\obj\Debug\Principal.Interfaz.VentanaPrincipal.resources
+C:\Users\juane\OneDrive\Escritorio\Gropal Fund\grupal-fund\Fondo Grupal\Aplicacion Visual\Principal\Principal\obj\Debug\Principal.Properties.Resources.resources
+C:\Users\juane\OneDrive\Escritorio\Gropal Fund\grupal-fund\Fondo Grupal\Aplicacion Visual\Principal\Principal\obj\Debug\Fondo Grupal.csproj.GenerateResource.cache
+C:\Users\juane\OneDrive\Escritorio\Gropal Fund\grupal-fund\Fondo Grupal\Aplicacion Visual\Principal\Principal\obj\Debug\Fondo Grupal.csproj.CoreCompileInputs.cache
+C:\Users\juane\OneDrive\Escritorio\Gropal Fund\grupal-fund\Fondo Grupal\Aplicacion Visual\Principal\Principal\obj\Debug\Principal.exe
+C:\Users\juane\OneDrive\Escritorio\Gropal Fund\grupal-fund\Fondo Grupal\Aplicacion Visual\Principal\Principal\obj\Debug\Principal.pdb
+C:\Users\juane\OneDrive\Escritorio\Gropal Fund\grupal-fund\Fondo Grupal\Aplicacion Visual\Principal\Principal\bin\Debug\Principal.exe.config
+C:\Users\juane\OneDrive\Escritorio\Gropal Fund\grupal-fund\Fondo Grupal\Aplicacion Visual\Principal\Principal\bin\Debug\Principal.exe.manifest
+C:\Users\juane\OneDrive\Escritorio\Gropal Fund\grupal-fund\Fondo Grupal\Aplicacion Visual\Principal\Principal\bin\Debug\Principal.application
+C:\Users\juane\OneDrive\Escritorio\Gropal Fund\grupal-fund\Fondo Grupal\Aplicacion Visual\Principal\Principal\bin\Debug\Principal.exe
+C:\Users\juane\OneDrive\Escritorio\Gropal Fund\grupal-fund\Fondo Grupal\Aplicacion Visual\Principal\Principal\bin\Debug\Principal.pdb
+C:\Users\juane\OneDrive\Escritorio\Gropal Fund\grupal-fund\Fondo Grupal\Aplicacion Visual\Principal\Principal\obj\Debug\Principal.exe.manifest
+C:\Users\juane\OneDrive\Escritorio\Gropal Fund\grupal-fund\Fondo Grupal\Aplicacion Visual\Principal\Principal\obj\Debug\Principal.application
